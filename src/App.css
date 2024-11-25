@@ -28,6 +28,66 @@
   color: #61dafb;
 }
 
+.list {
+  margin: 0 auto; /* Wyśrodkowanie horyzontalne */
+  padding: 20px; /* Wewnętrzne odstępy */
+  width: 60%; /* Ustawienie szerokości listy na 60% ekranu */
+  max-width: 1000px; /* Maksymalna szerokość listy */
+  background-color: #f9f9f9; /* Opcjonalne tło */
+  border: 1px solid #ddd; /* Opcjonalna ramka */
+  border-radius: 8px; /* Zaokrąglenie rogów */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lekki cień dla estetyki */
+}
+
+li {
+  margin-bottom: 10px; /* Odstępy między elementami */
+  padding: 10px; /* Wewnętrzne odstępy elementów */
+  background-color: #fff; /* Tło elementu */
+  border: 1px solid #ddd; /* Ramka wokół elementu */
+  border-radius: 4px; /* Zaokrąglenie rogów elementów */
+  display: flex; /* Układ flexbox dla wyśrodkowania elementów w jednej linii */
+  justify-content: space-between; /* Równomierne rozmieszczenie zawartości */
+  align-items: center; /* Wyrównanie w pionie */
+}
+
+/* Dodatkowe stylowanie tekstu */
+li span {
+  font-size: 14px; /* Rozmiar tekstu */
+  color: #333; /* Kolor tekstu */
+  flex-shrink: 1; /* Komórki mogą się kurczyć */
+  white-space: nowrap; /* Zapobiega łamaniu tekstu */
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.wanted-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.wanted-item span {
+  font-weight: bold;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
